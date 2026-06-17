@@ -1,9 +1,15 @@
+/* =======================
+   GLOBAL STYLES
+======================= */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background: #f5f5f5;
 }
 
+/* =======================
+   NAVBAR
+======================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -20,63 +26,33 @@ body {
   font-weight: 500;
 }
 
+/* =======================
+   PAGE
+======================= */
 .page {
   padding: 20px;
   text-align: center;
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.title {
+  font-size: 32px;
+  margin-bottom: 5px;
 }
 
-.card {
-  width: 220px;
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: 0.3s;
+.subtitle {
+  color: #666;
+  margin-bottom: 20px;
 }
 
-.card:hover {
-  transform: translateY(-8px);
-}
-
-.card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-button {
-  margin: 10px;
-  padding: 8px 12px;
-  border: none;
-  background: #6f4e37;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #4b2e1f;
-}
-
-.footer {
-  margin-top: 30px;
-  padding: 15px;
-  background: #eee;
-  text-align: center;
-}
-
+/* =======================
+   HOME IMAGES
+======================= */
 .hero {
   width: 80%;
   border-radius: 15px;
   margin-top: 20px;
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -95,17 +71,10 @@ button:hover {
 .gallery img:hover {
   transform: scale(1.05);
 }
-.title {
-  font-size: 32px;
-  margin-bottom: 5px;
-}
 
-.subtitle {
-  color: #666;
-  margin-bottom: 20px;
-}
-
-/* GRID */
+/* =======================
+   MENU GRID
+======================= */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -113,29 +82,25 @@ button:hover {
   padding: 10px;
 }
 
-/* CARD */
+/* MENU CARD */
 .menu-card {
   background: white;
-  border-radius: 18px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
 .menu-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  transform: translateY(-8px);
 }
 
 /* IMAGE */
-.img-container {
-  position: relative;
-}
-
 .menu-card img {
   width: 100%;
-  height: 160px;
+  height: 170px;
   object-fit: cover;
+  display: block;
 }
 
 /* PRICE BADGE */
@@ -150,7 +115,12 @@ button:hover {
   font-weight: bold;
 }
 
-/* CONTENT */
+/* IMAGE WRAPPER */
+.img-container {
+  position: relative;
+}
+
+/* MENU CONTENT */
 .menu-content {
   padding: 15px;
   text-align: left;
@@ -181,6 +151,10 @@ button:hover {
 .menu-content button:hover {
   background: #4b2e1f;
 }
+
+/* =======================
+   CONTACT PAGE
+======================= */
 .contact-container {
   display: flex;
   justify-content: center;
@@ -189,23 +163,20 @@ button:hover {
   margin-top: 20px;
 }
 
-/* INFO BOX */
-.contact-info {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  width: 280px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-/* FORM */
+.contact-info,
 .contact-form {
   background: white;
   padding: 20px;
   border-radius: 15px;
   width: 280px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -224,7 +195,6 @@ button:hover {
   resize: none;
 }
 
-/* BUTTON */
 .contact-form button {
   padding: 10px;
   background: #6f4e37;
@@ -238,7 +208,9 @@ button:hover {
   background: #4b2e1f;
 }
 
-/* MAP */
+/* =======================
+   MAP
+======================= */
 .map {
   margin-top: 20px;
 }
@@ -248,4 +220,14 @@ button:hover {
   height: 250px;
   border: none;
   border-radius: 15px;
+}
+
+/* =======================
+   FOOTER
+======================= */
+.footer {
+  margin-top: 30px;
+  padding: 15px;
+  background: #eee;
+  text-align: center;
 }

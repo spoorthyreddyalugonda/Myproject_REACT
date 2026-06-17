@@ -1,14 +1,12 @@
 function MenuCard({ item, addToCart }) {
   return (
     <div className="menu-card">
-      <div className="img-container">
-        <img src={item.image} alt={item.name} />
-        <span className="price-badge">₹ {item.price}</span>
-      </div>
-
       <div className="menu-content">
         <h3>{item.name}</h3>
         <p>Freshly prepared • Premium taste</p>
+        
+        {/* Price added here */}
+        <div className="price-tag">₹ {item.price}</div>
 
         <button onClick={() => addToCart(item)}>
           Add to Cart 🛒
